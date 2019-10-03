@@ -10,4 +10,21 @@ export default class AppStore extends AsyncStore<IConfigureResult> {
     super(rootStore);
     this.apiService = apiService;
   }
+
+  public async configure() {
+    try {
+      const result = await this.apiService.configure();
+      this.handleSuccess(result);
+    } catch (e) {
+      console.log("AppStore.configure", {e});
+      this.handleError(e.message);
+    }
+  }
+
+  public getImageUrl(path: string) {
+    if (this.data) {
+      return `${this.data.images.base_url}original${path}`;
+    }
+    return null;
+  }
 }
