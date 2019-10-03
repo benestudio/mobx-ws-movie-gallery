@@ -1,0 +1,9 @@
+.Watchlist {
+  padding: 30px;
+}
+
+.Watchlist > .results {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+}

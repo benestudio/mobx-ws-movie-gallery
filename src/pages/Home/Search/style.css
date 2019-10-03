@@ -1,0 +1,15 @@
+.Search .input-container {
+  max-width: 300px;
+  margin-left: auto;
+  padding: 0 0 30px 30px;
+}
+
+.Search .results {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.Search .heading-container {
+  width: 100%;
+}

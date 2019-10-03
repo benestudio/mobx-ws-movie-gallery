@@ -1,0 +1,5 @@
+{
+  "hooks": {
+    "pre-commit": "npm-run-all --parallel typecheck lint:fix --sequential stage-files"
+  }
+}

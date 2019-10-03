@@ -1,0 +1,44 @@
+.MovieDetails {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.MovieDetails > .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(0deg, black, transparent);
+  display: flex;
+  flex-direction: column;
+}
+
+.MovieDetails .details-container {
+  color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 30px;
+  flex: 1;
+}
+
+.MovieDetails .title {
+  color: white;
+  font-size: 3em;
+  margin: 0;
+}
+
+.MovieDetails .meta {
+  display: flex;
+  font-size: 2em;
+  align-items: baseline;
+}
+
+.MovieDetails .meta > .secondary {
+  font-size: 0.7em;
+  margin-left: 10px;
+}

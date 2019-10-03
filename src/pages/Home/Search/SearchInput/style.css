@@ -1,0 +1,18 @@
+.SearchInput {
+  padding: 5px 10px;
+  background-color: #e8e8e8cf;
+  display: flex;
+  border-radius: 30px;
+  align-items: center;
+  color: #484848;
+}
+
+.SearchInput > input {
+  background: transparent;
+  flex: 1;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  padding: 5px;
+  color: inherit;
+}
