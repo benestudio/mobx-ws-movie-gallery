@@ -1,5 +1,4 @@
 import React, { useCallback, useRef, useState } from "react";
-import { observer } from "mobx-react-lite";
 import debounce from "lodash/debounce";
 
 import SearchView from "./SearchView";
@@ -18,4 +17,4 @@ const Search = () => {
   return <SearchView onChange={handleChange} value={value} results={[]} isFetching={false} />;
 };
 
-export default observer(Search);
+export default Search;
